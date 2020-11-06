@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 60%;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+}
+
+.topbar-header {
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 222, 218);
+}
+
+.topbar-header a {
+    font-size: 1.1rem;
+    text-decoration: underline;
+    color: #000;
+}
+
+.topbar-header a+a {
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 0.1rem solid;
+}
+
+.header {
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    max-width: 2560px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-left span {
+    font-size: 1.4rem;
+}
+
+.header-right .icon,
+.header-left .icon {
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.header-left>a+a,
+.header-right>a {
+    margin-left: 1.5rem;
+}
+
+.header-center {
+    width: 20%;
+    text-align: center;
+}
+
+.header-center a {
+    font-size: 3.6rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.find-form {
+    margin-right: 1.5rem;
+}
+
+.find-form input {
+    width: 15rem;
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    border: 0;
+    border-bottom: .1rem solid #000;
+    outline: none;
+}
+
+.find-form button {
+    border: 0;
+    background: none;
+}
+
+.find-form>button>i {
+    font-size: 2rem;
+}
+
+nav.nav-header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 4.2rem;
+    justify-content: center;
+}
+
+nav.nav-header>ul>li {
+    height: 3.2rem;
+}
+
+nav.nav-header>ul>li+li {
+    margin-left: 3rem;
+}
+
+nav.nav-header>ul>li>a:hover {
+    font-weight: bold;
+}
+
+nav.nav-header {
+    margin-bottom: 0.7rem;
+}
+
+header {
+    border-bottom: .1rem solid #ccc;
+}
+
+main .banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 52rem;
+}
+
+main .banner a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner * {
+    color: #fff;
+    letter-spacing: .4rem;
+    filter: blur(0.5px);
+    margin-bottom: 2.3rem;
+    text-align: center;
+}
+
+.banner .title {
+    font-size: 5.2rem;
+}
+
+.banner-container>div:first-child {
+    flex: 2;
+}
+
+.banner-container>div:last-child {
+    flex: 3;
+    align-self: center;
+}
+
+.banner .info {
+    font-size: 1.6rem;
+    filter: blur(0.2px);
+}
+
+.banner .buy {
+    font-size: 1.1rem;
+    filter: blur(0.2px);
+}
+
+.title-banner>* {
+    margin-top: 6rem;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+
+
+@media(max-width: 880px) {
+    .topbar-header>a+a {
+        display: none;
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .find-form {
+        display: none;
+    }
+}
